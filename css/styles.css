@@ -175,7 +175,10 @@ img
 }
 
 
-
+.barre3
+{
+    display: none;
+}
 
 
 
@@ -319,7 +322,7 @@ img
 
 input::placeholder
 {
-    padding-left: 3rem;
+    padding-left: 1.5rem;
 }
 
 #email:focus
@@ -357,7 +360,6 @@ input::placeholder
     background-color:white;
     display: none;
     row-gap: 3rem;
-    
 }
 
 .menu p
@@ -485,6 +487,14 @@ input::placeholder
 
 @media screen and (min-width:77rem)
 {
+
+    .barre3
+    {
+    display: flex;
+    width: 2px;
+    height: 26px;
+    background-color: rgba(1, 1, 1, 0.05);
+    }
     .treecontain
     {
         display: flex;
