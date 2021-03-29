@@ -92,6 +92,11 @@ img
    
 }
 
+.barrebis2
+{
+    display: none;
+}
+
 .button:hover, .button2:hover
 {
     background-color: #64fcd9;
@@ -307,7 +312,14 @@ img
     height: 3rem;
     border-radius: 6px 6px;
     border: 1px rgba(1, 1, 1, 0.2) solid;
-    text-align: center;
+    
+    
+
+}
+
+input::placeholder
+{
+    padding-left: 3rem;
 }
 
 #email:focus
@@ -457,6 +469,10 @@ img
     {
         justify-content: center 
     }
+
+
+
+
 
 
 
