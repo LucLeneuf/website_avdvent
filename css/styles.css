@@ -321,15 +321,22 @@ img
     height: 3rem;
     border-radius: 6px 6px;
     border: 1px rgba(1, 1, 1, 0.2) solid;
-    
-    
-
 }
 
-input::placeholder
+#email:focus
+{
+    border: solid red 1px;
+}
+
+
+
+input
 {
     padding-left: 1.5rem;
 }
+
+
+
 
 #email:focus
 {
@@ -365,7 +372,7 @@ input::placeholder
     z-index: 6;
     background-color:rgba(255, 255, 255, 0.95);
     display: none;
-    row-gap: 3rem;
+    row-gap: 10%;
 }
 
 .menu p
@@ -376,7 +383,10 @@ input::placeholder
    width: 100%;
    color: black;
    z-index: 10; 
-   font-weight: bold; 
+   font-weight: bolder; 
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   
 }
 
 .menu p:hover, .menubas p:hover
@@ -478,7 +488,7 @@ input::placeholder
         justify-content: center 
     }
 
-
+    
 
 
 
@@ -546,6 +556,8 @@ input::placeholder
     {
         width: inherit; 
         font-weight: 500;
+        text-transform: none;
+        letter-spacing: inherit;
     }
 
    
@@ -597,6 +609,7 @@ input::placeholder
 .rs img
 {
     max-width: 1rem;
+    cursor: pointer;
 }
 
 .bottom
