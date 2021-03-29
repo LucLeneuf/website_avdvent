@@ -82,6 +82,14 @@ img
     cursor: pointer;
 }
 
+.barrebis
+{
+    height: 1px;
+    width: 80vw;
+    background-color: black;
+   
+}
+
 .button:hover, .button2:hover
 {
     background-color: #64fcd9;;
@@ -185,7 +193,13 @@ img
     row-gap: 4rem;
 }
 
-
+.frame_VI
+{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
 .frame_IV
 {
     display: flex;
@@ -286,8 +300,6 @@ img
 #email:focus
 {
     border: 1px solid black;
-   
-  
     outline: none;
 }
 
@@ -493,3 +505,32 @@ img
 
 
 
+.loserv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menubas
+{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.rs 
+{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+
+}
+
+.rs img
+{
+    max-width: 1rem;
+}
