@@ -94,7 +94,7 @@ img
 
 .button:hover, .button2:hover
 {
-    background-color: #64fcd9;;
+    background-color: #64fcd9;
 }
 
 .circle
@@ -115,6 +115,8 @@ img
     height: 2px;
     background-color: #FFB61D;
 }
+
+
 
 .logo p
 {
@@ -245,6 +247,12 @@ img
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
 }
+.nrbb
+{
+    font-family: "nunito";
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 .nr 
 {
@@ -288,7 +296,7 @@ img
     font-family: "nunito";
 }
 
-#cocher
+.cocher
 {
     display: none;
 }
@@ -327,7 +335,6 @@ img
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     position: fixed;
     top: 0;
     right: 0;
@@ -338,6 +345,7 @@ img
     background-color:white;
     display: none;
     row-gap: 3rem;
+    
 }
 
 .menu p
@@ -353,7 +361,7 @@ img
 
 .menu p:hover, .menubas p:hover
 {
-    color: #64fcd9 
+    color: #64fcd9;
 }
 
 .tool
@@ -373,7 +381,7 @@ img
     z-index: 10;
     cursor: pointer;
     right: 4.5rem;
-    position: fixed
+    position: fixed;
 }
 
 .croix:hover
@@ -387,10 +395,7 @@ img
     z-index: 10;
 }
 
-#nav_button:checked ~ .menu  
-{
-    display: flex;
-}
+
 
 #nav_button:checked ~ .croix 
 {
@@ -401,6 +406,12 @@ img
 {
     display: none;
 }
+
+#nav_button:checked ~ .menu  
+{
+    display: flex;
+}
+
 
 
 
@@ -441,6 +452,14 @@ img
     {
        flex-direction: row-reverse;
     }
+
+    .im
+    {
+        justify-content: center 
+    }
+
+
+
 
 
 }
@@ -504,6 +523,11 @@ img
         display: none;
     }
 
+    .im
+    {
+        justify-content: flex-start; 
+    }
+
     
 }
 
@@ -556,3 +580,22 @@ img
 {
     color: rgba(1, 1, 1, 0.5);
 }
+
+
+.treecontain img
+{
+    max-width: 1rem;
+
+}
+
+.im 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+  
+
+}
+
+
