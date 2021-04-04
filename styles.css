@@ -1,0 +1,564 @@
+/* BASIC SETTINGS */
+
+*
+{
+    box-sizing: border-box;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+body, html
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    row-gap: 4rem;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    width: 100%;
+    max-width: 36rem;
+    height: auto;
+}
+
+
+/* HEADER */
+
+    /* Logo */
+
+    .container_five__top__logo
+    {
+        position: relative;
+    }
+
+    .container_five__top__logo__font
+    {
+        font-family: "unkempt";
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+
+    .circle
+    {
+        background-color: #64fcd9;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 4px;
+        left: -6px;
+        z-index: -1;
+    }
+
+    /* Menu */
+
+        /* Hamburger icon*/
+
+        .hamburger_icon
+        {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+            cursor: pointer;
+        }
+        .hamburger_icon div
+        {
+            width: 3rem;
+            height: 4px;
+            background-color: #FFB61D;
+        }
+
+        /* Display */
+
+        .header
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        .menu
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 6;
+            background-color:rgba(255, 255, 255, 0.95);
+            display: none;
+            row-gap: 10%;
+        }
+
+        .menu p
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: black;
+            z-index: 10; 
+            font-weight: bolder; 
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+
+        .tool
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .croix
+        {
+            font-size: 2rem;
+            font-family: "arcamajora";
+            font-weight: bolder;
+            display: none;
+            color: black;
+            z-index: 10;
+            cursor: pointer;
+            right: 4.5rem;
+            position: fixed;
+        }
+
+        .cocher
+        {
+            display: none;
+        }
+
+        /* Condition */
+
+        #nav_button:checked ~ .menu p 
+        {
+            display: flex;
+            z-index: 10;
+        }
+
+        #nav_button:checked ~ .croix 
+        {
+            display: flex;
+        }
+
+        #nav_button:checked ~ .hamburger  
+        {
+            display: none;
+        }
+
+        #nav_button:checked ~ .menu  
+        {
+            display: flex;
+        }
+
+
+
+/* CONTAINER */
+
+.container_one, .container_two
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6rem;
+}
+
+.container_three
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container_four
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    column-gap: 3rem;   
+}
+
+.container_five
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;   
+    width: 100%;
+}
+
+.container_one__text
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 22rem;  
+}
+
+.container_two__text, .container_four__text
+{
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container_three_theme
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem; 
+}
+
+.container_three_theme p
+{
+    max-width: 16rem;
+}
+
+.container_three_theme__item__title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.container_three_theme__item__title img
+{
+    display: flex;
+    column-gap: 1rem;
+    max-width: 1rem;
+}
+
+.container_four__contact
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-top: 1rem;
+}
+
+.container_five__top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1.5rem;
+}
+
+.container_five__top__menu
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.container_five__bottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;  
+}
+
+.container_five__bottom__logo 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    column-gap: 0.5rem;
+}
+
+.container_five__bottom__logo img
+{
+    max-width: 1rem;
+    cursor: pointer;
+}
+
+
+
+/* MAIL BAR */
+
+#email
+{
+    width: 16rem;
+    height: 3rem;
+    border-radius: 6px 6px;
+    border: 1px rgba(1, 1, 1, 0.2) solid;
+}
+
+#email:focus
+{
+    border: 1px solid black;
+    outline: none;
+}
+
+input
+{
+    padding-left: 1.5rem;
+}
+
+
+
+/* STYLES */
+
+    /* Font family */
+
+    @font-face 
+    {
+        font-family: "nunito";
+        src: url(fonts/NunitoSans-Regular.ttf),
+            url(fonts/NunitoSans-Bold.ttf);
+    }
+
+    @font-face 
+    {
+        font-family: "unkempt";
+        src: url(fonts/Unkempt-Regular.ttf),
+            url(fonts/Unkempt-Bold.ttf);
+    }
+
+    @font-face 
+    {
+        font-family: "arcamajora";
+        src: url(fonts/ArcaMajora3-Bold.otf);
+    }
+
+    /* Font styles */
+
+    .little_font_title
+    {
+        font-family: "nunito";
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .medium_font_title
+    {
+        font-family: "nunito";
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    .big_font_title
+    {
+        font-family: "nunito";
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+
+    .regular_font_text
+    {
+        font-family: "nunito";
+        font-size: 1rem;  
+    }
+
+    /* Color */
+
+    .lightgrey 
+    {
+        color: rgba(1, 1, 1, 0.5);
+    }
+
+    /* Hover */
+
+    .container_five__top__menu p:hover
+    {
+        color: #64fcd9;
+    }
+
+    .container_one__button:hover, .container_four__contact__button:hover, .hamburger_icon:hover div
+    {
+    background-color: #64fcd9;   
+    }
+
+    .menu p:hover, .menubas p:hover, .croix:hover
+    {
+        color: #64fcd9;
+    }
+
+
+
+/* SHAPES */
+
+    /* button */
+
+    .container_one__button
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFB61D;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 6px 6px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container_four__contact__button
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFB61D;
+        width: 8rem;
+        height: 3rem;
+        border-radius: 6px 6px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* bar */
+
+    .container_three__barre
+    {
+        width: 3rem;
+        height: 2px;
+        background-color: #FFB61D;
+    }
+
+    .container_five__barre
+    {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(1, 1, 1, 0.05);
+    }
+
+    .menu__barre
+    {
+        display: flex;
+        width: 2px;
+        height: 26px;
+        background-color: rgba(1, 1, 1, 0.05);
+        display: none;
+    }
+
+
+
+/* DISPLAY TABLET */
+
+@media screen and (min-width:35rem)
+{
+    .container_one__text, .container_two__text, .container_four__text
+    {
+      align-items: center;
+      text-align: center;  
+    }
+
+    .container_two
+    {
+       flex-direction: row-reverse;
+    }
+
+    .container_three
+    {
+        align-items: center;
+    }
+    .container_three_theme
+    {
+        text-align: center;
+    }
+    .container_three_theme__item__title
+    {
+        justify-content: center;
+    }
+  
+    .container_four__contact
+    {
+        justify-content: center;
+    }
+}
+
+
+
+/* DISPLAY PC */
+
+@media screen and (min-width:78rem)
+{
+    .container_one__text, .container_two__text, .container_four__text
+    {
+      align-items: inherit;
+      text-align: inherit;  
+    }
+  
+    .container_four__contact, .container_one__text
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container_three_theme
+    {
+        flex-direction: row;
+        text-align: start;
+        column-gap: 6rem;
+    }
+
+    .container_three_theme__item__title
+    {
+        justify-content: flex-start;
+    }
+
+        /* Menu */
+
+        .menu
+        {
+            position: static;
+            display: flex;
+            width: inherit;
+            height: inherit;
+            justify-content: flex-end;
+            flex-direction: row;
+        
+            column-gap: 3rem;
+            background-color: inherit;
+        }
+
+        .menu p 
+        {
+            width: inherit; 
+            font-weight: 500;
+            text-transform: none;
+            letter-spacing: inherit;
+        }
+
+        label 
+        {
+            display: none;
+        }
+
+        .menu__barre
+        {
+            display: flex; 
+        }
+        #nav_button:checked ~ .croix 
+        {
+            display: none;
+        }
+}
