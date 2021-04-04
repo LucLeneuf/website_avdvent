@@ -5,7 +5,7 @@ The site is designed mobile first and has two others displays, one for tablet an
 <br><br><br>
 
 
-**Credits :**
+ ## Credits :
 
 **Vishwajeet patil**  
 [@uivish](https://www.figma.com/@uivish)
