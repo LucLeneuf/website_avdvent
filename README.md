@@ -7,7 +7,6 @@ The site is designed mobile first and has two other displays, one for tablet and
 
 Credits :
 
-**Vishwajeet patil**  
-**[@uivish](https://www.figma.com/@uivish)**
+**Vishwajeet patil / [@uivish](https://www.figma.com/@uivish)**
 
-[advent - Landing Page](https://www.figma.com/community/file/929785763166149576) 
+**[advent - Landing Page](https://www.figma.com/community/file/929785763166149576)**
