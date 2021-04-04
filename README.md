@@ -10,4 +10,4 @@ The site is designed mobile first and has two others displays, one for tablet an
 **Vishwajeet patil**  
 [@uivish](https://www.figma.com/@uivish)
 
-**[advent - Landing Page](https://www.figma.com/community/file/929785763166149576)**
+Link [advent - Landing Page](https://www.figma.com/community/file/929785763166149576)
